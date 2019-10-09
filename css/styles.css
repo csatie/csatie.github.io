@@ -1,0 +1,227 @@
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans";
+}
+
+.border-left {
+  border-color: #c5c5c5 !important;
+}
+
+header {
+  display: inline-block;
+  position: relative;
+  margin: 70px 0;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+a {
+  color: #212529;
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.name {
+  font-family: "Courier New", Courier, monospace;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 51px;
+  left: -66px;
+  background: #fff;
+  padding: 0 7px;
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.social a {
+  border: none;
+}
+
+.project {
+  align-items: center;
+  padding: 60px 0 80px;
+}
+
+.project .title {
+  display: flex;
+  align-items: center;
+}
+
+.project h2 {
+  font-weight: bold;
+  font-size: 1.8em;
+  display: inline-block;
+  margin: 0;
+}
+
+.project .title a {
+  margin-left: 5px;
+  border: none;
+}
+
+.project p {
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+
+.project .tech {
+  font-family: "Courier New", Courier, monospace;
+  color: #999;
+}
+
+.preview {
+  position: relative;
+  left: -45px;
+}
+
+.desktop {
+  background: url(../img/desktop.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 347px;
+  position: relative;
+}
+
+.desktop a {
+  transition: 2s;
+  width: 76%;
+  display: block;
+  position: absolute;
+  left: 12%;
+  top: 15px;
+  text-indent: -99999px;
+  background-size: cover !important;
+  border: none;
+  z-index: -1;
+  padding-top: 45%;
+}
+
+.desktop:hover a {
+  background-position-y: 102% !important;
+}
+
+.troquinha .desktop a {
+  background: url(../img/troquinha.jpg) no-repeat;
+}
+
+.cidade .desktop a {
+  background: url(../img/cidade-refugio.png) no-repeat;
+}
+
+.ato .desktop a {
+  background: url(../img/ato.jpg) no-repeat;
+}
+
+.kelly .desktop a {
+  background: url(../img/kelly.jpg) no-repeat;
+  transition: 4s;
+}
+
+.mobile {
+  background: url(../img/mobile.png) no-repeat;
+  width: 108px;
+  height: 213px;
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+}
+
+.mobile a {
+  transition: 4s;
+  width: 88px;
+  height: 160px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 26px;
+  text-indent: -99999px;
+  background-size: cover !important;
+  border: none;
+}
+
+.mobile a:hover {
+  background-position-y: 100% !important;
+}
+
+.troquinha .mobile a {
+  background: url(../img/troquinha-mobile.png) no-repeat;
+}
+
+.ato .mobile a {
+  background: url(../img/ato-mobile.jpg) no-repeat;
+}
+
+.kelly .mobile a {
+  background: url(../img/kelly-mobile.jpg) no-repeat;
+  transition: 5s;
+}
+
+footer {
+  border-top: 1px solid #c5c5c5;
+  margin-left: -1px;
+  border-left: 1px solid #fff;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+footer div {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  background: #fff;
+  padding: 0 7px;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 37px;
+    line-height: 37px;
+  }
+
+  .social {
+    top: 7px;
+  }
+
+  .social a img {
+    width: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .desktop {
+    margin-bottom: 30px;
+  }
+  .desktop a {
+    width: 70%;
+    left: 11%;
+  }
+}
+
+@media (max-width: 991px) {
+  .description {
+    margin-left: 20px;
+  }
+}
