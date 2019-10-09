@@ -13,6 +13,7 @@
     <title>Web Developer Portfolio</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap"
@@ -43,7 +44,11 @@
         <main role="main" class="container">
           <div class="row project cidade">
             <div class="preview col-sm-12 col-md-12 col-lg-6">
-              <div class="desktop">
+              <div
+                data-fancybox="cidade"
+                href="img/cidade-refugio.jpg"
+                class="desktop"
+              >
                 <a href="#">Cidade de Refúgio</a>
               </div>
               <!-- <div class="mobile">
@@ -70,11 +75,17 @@
 
           <div class="row project troquinha">
             <div class="preview col-sm-12 col-md-12 col-lg-6">
-              <div class="desktop">
-                <a href="https://troquinha.com.br" target="_blank">Troquinha</a>
+              <div
+                data-fancybox="troquinha"
+                href="img/troquinha.jpg"
+                class="desktop"
+              >
+                <a href="#">Troquinha</a>
               </div>
               <div class="mobile">
-                <a href="https://troquinha.com.br" target="_blank">Troquinha</a>
+                <a data-fancybox="troquinha" href="img/troquinha-mobile.jpg"
+                  >Troquinha</a
+                >
               </div>
             </div>
             <div class="description col-sm-12 col-md-12 col-lg-6">
@@ -99,11 +110,13 @@
 
           <div class="row project ato">
             <div class="preview col-sm-12 col-md-12 col-lg-6">
-              <div class="desktop">
-                <a href="#" target="_blank">Ato Clothing</a>
+              <div data-fancybox="ato" href="img/ato.jpg" class="desktop">
+                <a href="#">Ato Clothing</a>
               </div>
               <div class="mobile">
-                <a href="#" target="_blank">Ato Clothing</a>
+                <a data-fancybox="ato" href="img/ato-mobile.jpg"
+                  >Ato Clothing</a
+                >
               </div>
             </div>
             <div class="description col-sm-12 col-md-12 col-lg-6">
@@ -125,11 +138,11 @@
 
           <div class="row project kelly">
             <div class="preview col-sm-12 col-md-12 col-lg-6">
-              <div class="desktop">
-                <a href="#" target="_blank">Kelly Niglio</a>
+              <div data-fancybox="kelly" href="img/kelly.jpg" class="desktop">
+                <a href="#">Kelly</a>
               </div>
               <div class="mobile">
-                <a href="#" target="_blank">Kelly Niglio</a>
+                <a data-fancybox="kelly" href="img/kelly-mobile.jpg">Kelly</a>
               </div>
             </div>
             <div class="description col-sm-12 col-md-12 col-lg-6">
@@ -147,7 +160,11 @@
               <span class="tech">// Bootstrap, PHP</span>
             </div>
           </div>
+
+          <a data-fancybox="ato" href="img/ato-categoria.jpg"></a>
+          <a data-fancybox="ato" href="img/ato-interna.jpg"></a>
         </main>
+
         <footer>
           <div>camila.ozk@gmail.com</div>
         </footer>
@@ -161,5 +178,6 @@
     ></script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
   </body>
 </html>
